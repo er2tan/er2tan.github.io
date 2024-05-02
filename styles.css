@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* стили навигации */
+header{
+    width: 100%;
+    background: rgb(160, 231, 255);
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+/* конец навигации */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+p {
+    margin: 2px;
+    text-indent: 3ch;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  }
+
+/* стили заголовков */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+/* конец заголовков */
+
+/* Стили таблицы */
+td {
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    padding: 9px 8px;
+  }
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: white;
+    border-collapse: collapse;
+    text-align: left;
+}
+/* конец таблиц */
+
+.fit-picture{
+    align-self: flex-start;
+}
+
+.author {
+    font-size: 25px;
+    margin: 20px;
+}
+
+#books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1028px) {
+    nav a{
+        font-size: 40px;
+    }
+    td{
+        font-size: 40px;
+    }
+    #myphoto{
+        width: 195px;
+        height: 250px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p{
+        font-size: 40px;
+        text-align: justify;
+    }
+    .author {
+        font-size: 25px;
+    }
+
+    .fit-picture{
+        width: 50%;
+    }
+}
+
